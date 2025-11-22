@@ -1,0 +1,71 @@
+# ========================================
+# Docker 构建忽略文件
+# 优化构建速度和镜像大小
+# ========================================
+
+# Git 文件
+.git
+.gitignore
+.gitattributes
+
+# Python 缓存
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info
+dist/
+build/
+.pytest_cache/
+.coverage
+
+# 虚拟环境
+venv/
+env/
+ENV/
+.venv
+
+# 前端依赖和构建
+frontend/node_modules/
+frontend/.vite/
+frontend/dist/
+
+# 环境变量（已注释，部署时需要包含 .env 文件）
+# backend/.env
+# .env
+
+# 日志文件
+*.log
+logs/
+server.log
+
+# IDE 配置
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# 文档和图片（可选，根据需要调整）
+README.md
+*.png
+*.jpg
+*.jpeg
+*.gif
+connect_us.jpg
+result.png
+drawio1.png
+
+# Docker 相关
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# 其他
+*.md
+LICENSE
